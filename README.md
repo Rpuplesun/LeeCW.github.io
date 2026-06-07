@@ -1,12 +1,12 @@
-# 이찬우 Technology Strategy Portfolio
+# 이찬우 Backend Developer Portfolio
 
-GitHub Pages에 바로 배포할 수 있는 정적 포트폴리오 사이트입니다.
+GitHub Pages에 배포한 범용 개발자 포트폴리오 사이트입니다.
 
 ## 구성
 
 - `index.html`: 포트폴리오 메인 페이지
 - `styles.css`: 반응형 스타일
-- `assets/`: 프로젝트 캡처 이미지와 PDF 포트폴리오
+- `assets/`: 프로젝트 캡처 이미지와 프로필 이미지
 - `.nojekyll`: GitHub Pages 정적 파일 처리를 위한 설정
 
 ## GitHub Pages 배포 방법
