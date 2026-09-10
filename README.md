@@ -7,6 +7,11 @@ GitHub Pages에 배포한 범용 개발자 포트폴리오 사이트입니다.
 - `index.html`: 포트폴리오 메인 페이지
 - `styles.css`: 반응형 스타일
 - `assets/`: 프로젝트 캡처 이미지와 프로필 이미지
+
+## 소개 프로젝트
+
+- AI Agent 기반 B2B 자동 발주 SaaS MVP (`#project`)
+- 한국어 특화 음성 입력기 말로(Mallo), 공개 베타 출시 (`#mallo`, https://www.project-mallo.com/)
 - `.nojekyll`: GitHub Pages 정적 파일 처리를 위한 설정
 
 ## GitHub Pages 배포 방법

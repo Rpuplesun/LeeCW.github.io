@@ -6,12 +6,12 @@
     <title>이찬우 | Backend Developer Portfolio</title>
     <meta
       name="description"
-      content="Java 백엔드 운영, 배치 시스템, REST API, 업무 자동화, AI Agent 기반 프로젝트 경험을 정리한 이찬우의 개발자 포트폴리오입니다."
+      content="Java 백엔드 운영, 배치 시스템, REST API, 업무 자동화, 한국어 음성 입력기 '말로(Mallo)' 출시 등 AI Agent 기반 프로젝트 경험을 정리한 이찬우의 개발자 포트폴리오입니다."
     />
     <meta property="og:title" content="이찬우 | Backend Developer Portfolio" />
     <meta
       property="og:description"
-      content="운영 안정성, 백엔드 개발, 자동화, AI Agent 활용 경험을 담은 개발자 포트폴리오"
+      content="운영 안정성, 백엔드 개발, 자동화, AI Agent 기반 1인 개발·출시 경험을 담은 개발자 포트폴리오"
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/03_admin_dashboard.png" />
@@ -29,6 +29,7 @@
         <a href="#profile">Profile</a>
         <a href="#experience">Experience</a>
         <a href="#project">Project</a>
+        <a href="#mallo">Mallo</a>
         <a href="#strategy">Strengths</a>
         <a href="#ai">AI</a>
         <a href="#contact">Contact</a>
@@ -44,7 +45,7 @@
           <p class="hero-copy">
             Java 기반 운영 개발, 배치 시스템, REST API, 데이터 검증과 자동화 경험을 바탕으로
             안정적인 서비스를 개발합니다. AI Agent 기반 프로젝트를 통해 기획부터 구현, 검증,
-            문서화까지 이어지는 개발 흐름을 직접 만들고 있습니다.
+            출시까지 이어지는 개발 흐름을 직접 만들고 있습니다.
           </p>
           <div class="hero-actions" aria-label="주요 액션">
             <a class="button button-primary" href="#project">대표 프로젝트</a>
@@ -75,15 +76,16 @@
                 체계를 만드는 일에 강점이 있습니다.
               </p>
               <p>
-                최근에는 AI Agent와 자동화 도구를 활용해 B2B 자동 발주 SaaS MVP를 설계하고
-                구현하며, AI를 개발 생산성과 운영 품질을 높이는 실무 도구로 적용하는 방식을
-                정리하고 있습니다. 다양한 서비스 환경에서 유지보수 가능한 코드, 추적 가능한 운영
-                흐름, 반복 업무를 줄이는 자동화에 집중합니다.
+                최근에는 AI Agent 팀을 스펙·계약 문서로 통제하며 한국어 특화 음성 입력기
+                '말로(Mallo)'를 기획부터 공개 베타 출시까지 1인으로 개발했고, B2B 자동 발주
+                SaaS MVP를 설계·구현하며 AI를 개발 생산성과 운영 품질을 높이는 실무 도구로
+                적용하는 방식을 정리하고 있습니다. 유지보수 가능한 코드, 추적 가능한 운영 흐름,
+                반복 업무를 줄이는 자동화에 집중합니다.
               </p>
             </div>
             <div class="metric-panel" aria-label="핵심 지표">
               <div>
-                <strong>4년 2개월</strong>
+                <strong>4년 3개월</strong>
                 <span>운영 개발 및 백엔드 경험</span>
               </div>
               <div>
@@ -208,6 +210,66 @@
         </div>
       </section>
 
+      <section id="mallo" class="section section-muted" aria-labelledby="mallo-title">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Project · Shipped</p>
+          <h2 id="mallo-title">한국어 특화 음성 입력기 '말로(Mallo)', 기획부터 공개 베타 출시까지</h2>
+        </div>
+        <div class="project-hero mallo-hero">
+          <div class="project-summary">
+            <h3>커서가 있는 자리에 바로 받아쓰는 Windows 음성 입력 앱</h3>
+            <p>
+              포커스된 커서 위치에 바로 입력되는 한국어 STT 데스크톱 앱입니다. 존댓말·반말 구분,
+              추임새 제거 같은 한국어 특화 후처리를 넣고, 음성은 기본적으로 기기 밖으로 나가지
+              않도록 온디바이스로 처리했습니다. AI Agent 팀(Claude Code)을 스펙·계약 문서로
+              통제하며 1인으로 개발했고, 유휴 메모리와 삽입 지연 목표를 실측으로 검증한 뒤
+              공개 베타를 출시했습니다.
+            </p>
+            <dl class="detail-list">
+              <div>
+                <dt>Role</dt>
+                <dd>기획, 스펙·계약 문서 작성, Rust/React 구현, 성능 실측 검증, 릴리스 운영</dd>
+              </div>
+              <div>
+                <dt>Stack</dt>
+                <dd>Rust(Tauri), React, 온디바이스 STT, GitHub Actions(빌드·릴리스 CI/CD)</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>메모리·지연 목표의 실측 검증, 로컬 처리 기본, AI 에이전트 통제 기반 1인 개발</dd>
+              </div>
+            </dl>
+            <div class="check-grid">
+              <span>온디바이스 STT</span>
+              <span>GitHub Actions 릴리스</span>
+              <span>스펙·계약 문서로 에이전트 통제</span>
+              <span>실측 기반 성능 검증</span>
+            </div>
+            <div class="hero-actions mallo-actions" aria-label="말로 링크">
+              <a class="button button-primary" href="https://www.project-mallo.com/" target="_blank" rel="noopener">project-mallo.com 에서 보기</a>
+            </div>
+          </div>
+          <div class="metric-panel" aria-label="말로 핵심 지표">
+            <div>
+              <strong>143MB</strong>
+              <span>유휴 메모리 실측</span>
+            </div>
+            <div>
+              <strong>2초 이내</strong>
+              <span>텍스트 삽입 지연 목표 실측 검증</span>
+            </div>
+            <div>
+              <strong>1인</strong>
+              <span>기획·설계·개발·검증·출시 전 과정</span>
+            </div>
+            <div>
+              <strong>Beta</strong>
+              <span>Windows 공개 베타 출시</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="strategy" class="section section-dark strategy-section" aria-labelledby="strategy-title">
         <div class="section-heading">
           <p class="eyebrow">Engineering Strengths</p>
@@ -325,13 +387,14 @@
             <p class="eyebrow">Contact</p>
             <h2 id="contact-title">운영에서 발견한 문제를 개발로 해결하겠습니다.</h2>
             <p>
-              Java 백엔드 운영 개발 경험, 자동화 프로젝트, AI Agent 활용 역량을 바탕으로
-              안정적이고 유지보수 가능한 서비스를 만드는 개발자가 되겠습니다.
+              Java 백엔드 운영 개발 경험, 자동화 프로젝트, AI Agent 기반 1인 개발·출시 경험을
+              바탕으로 안정적이고 유지보수 가능한 서비스를 만드는 개발자가 되겠습니다.
             </p>
           </div>
           <div class="contact-actions">
             <a class="button button-primary" href="mailto:tyu1300@naver.com">tyu1300@naver.com</a>
             <a class="button button-secondary" href="#project">Project</a>
+            <a class="button button-secondary" href="https://www.project-mallo.com/" target="_blank" rel="noopener">Mallo</a>
           </div>
         </div>
       </section>

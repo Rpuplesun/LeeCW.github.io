@@ -773,3 +773,15 @@ h1 {
     flex-direction: column;
   }
 }
+
+.mallo-hero {
+  margin-bottom: 0;
+}
+
+.mallo-actions {
+  margin-top: 24px;
+}
+
+.section-muted .metric-panel div {
+  background: #ffffff;
+}
