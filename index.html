@@ -6,12 +6,12 @@
     <title>이찬우 | Backend Developer Portfolio</title>
     <meta
       name="description"
-      content="Java 백엔드 운영, 배치 시스템, REST API, 업무 자동화, 한국어 음성 입력기 '말로(Mallo)' 출시 등 AI Agent 기반 프로젝트 경험을 정리한 이찬우의 개발자 포트폴리오입니다."
+      content="Java 백엔드 운영, 배치 시스템, REST API, 업무 자동화, Google Play 출시 앱 '운동자리'와 한국어 음성 입력기 '말로' 등 AI Agent 기반 1인 개발·출시 경험을 정리한 이찬우의 개발자 포트폴리오입니다."
     />
     <meta property="og:title" content="이찬우 | Backend Developer Portfolio" />
     <meta
       property="og:description"
-      content="운영 안정성, 백엔드 개발, 자동화, AI Agent 기반 1인 개발·출시 경험을 담은 개발자 포트폴리오"
+      content="운영 안정성, 백엔드 개발, 자동화, Google Play 출시까지 이어진 1인 개발 경험을 담은 개발자 포트폴리오"
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/03_admin_dashboard.png" />
@@ -29,6 +29,7 @@
         <a href="#profile">Profile</a>
         <a href="#experience">Experience</a>
         <a href="#project">Project</a>
+        <a href="#undongjari">Undongjari</a>
         <a href="#mallo">Mallo</a>
         <a href="#strategy">Strengths</a>
         <a href="#ai">AI</a>
@@ -76,11 +77,11 @@
                 체계를 만드는 일에 강점이 있습니다.
               </p>
               <p>
-                최근에는 AI Agent 팀을 스펙·계약 문서로 통제하며 한국어 특화 음성 입력기
-                '말로(Mallo)'를 기획부터 공개 베타 출시까지 1인으로 개발했고, B2B 자동 발주
-                SaaS MVP를 설계·구현하며 AI를 개발 생산성과 운영 품질을 높이는 실무 도구로
-                적용하는 방식을 정리하고 있습니다. 유지보수 가능한 코드, 추적 가능한 운영 흐름,
-                반복 업무를 줄이는 자동화에 집중합니다.
+                최근에는 수도권 공공시설 예약 지도·접수 오픈 알림 앱 '운동자리'를 기획 37일 만에
+                Google Play에 출시해 운영 중이고, 한국어 특화 음성 입력기 '말로(Mallo)'를 공개
+                베타까지 1인으로 개발했습니다. 두 프로젝트 모두 AI 코딩 에이전트를 구현·감사·리뷰에
+                활용하되 제품 결정과 검증, 출시, 운영은 직접 맡았습니다. 유지보수 가능한 코드,
+                추적 가능한 운영 흐름, 반복 업무를 줄이는 자동화에 집중합니다.
               </p>
             </div>
             <div class="metric-panel" aria-label="핵심 지표">
@@ -210,7 +211,68 @@
         </div>
       </section>
 
-      <section id="mallo" class="section section-muted" aria-labelledby="mallo-title">
+      <section id="undongjari" class="section section-muted" aria-labelledby="undongjari-title">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Project · Live on Google Play</p>
+          <h2 id="undongjari-title">공공시설 예약 지도·접수 오픈 알림 앱 '운동자리', 기획 37일 만에 Google Play 출시</h2>
+        </div>
+        <div class="project-hero featured-hero">
+          <div class="project-summary">
+            <h3>서울·인천·경기 공공데이터를 한 지도에 모으고, 접수 오픈을 놓치지 않게</h3>
+            <p>
+              공공 체육 대관·강좌·캠핑장 예약을 시설 단위 핀으로 지도에 보여주고, 강습(특정 시각
+              1회 오픈)과 대관(이용일 D-n 롤링 오픈)을 구분해 접수 직전에 푸시로 알리는 Android
+              앱과 백엔드입니다. 서울 Open API, 인천 REST, 경기 HTML 크롤, 전국 표준데이터를
+              하나의 어댑터 구조로 멱등 수집하고, 알림 디스패처는 FOR UPDATE SKIP LOCKED 잡 선점과
+              발송 직전 재조회로 중복·오발송을 막습니다. 2026년 10월 Google Play 프로덕션에
+              출시해 AWS EC2에서 운영 중입니다.
+            </p>
+            <dl class="detail-list">
+              <div>
+                <dt>Role</dt>
+                <dd>기획·데이터 조사, 수집 파이프라인·알림 디스패처·API 설계, Flutter 앱, 인프라·스토어 출시·운영 전 과정 (1인)</dd>
+              </div>
+              <div>
+                <dt>Stack</dt>
+                <dd>TypeScript, NestJS, PostgreSQL/PostGIS, Flutter, Kotlin, FCM, Docker Compose, Cloudflare Tunnel, AWS EC2, GitHub Actions</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>틀린 알림을 보내지 않기 — 멱등 수집, 비활성화 가드, 검수값 잠금, 지연 상한, 서버 푸시와 로컬 알림 이중화</dd>
+              </div>
+            </dl>
+            <div class="check-grid">
+              <span>이기종 공공데이터 멱등 수집</span>
+              <span>SKIP LOCKED 알림 디스패처</span>
+              <span>FCM + 로컬 알림 이중화</span>
+              <span>코드 감사 225건 반영</span>
+            </div>
+            <div class="hero-actions featured-actions" aria-label="운동자리 링크">
+              <a class="button button-primary" href="https://play.google.com/store/apps/details?id=com.chanwoo.undongjari" target="_blank" rel="noopener">Google Play에서 보기</a>
+            </div>
+          </div>
+          <div class="metric-panel" aria-label="운동자리 핵심 지표">
+            <div>
+              <strong>37일</strong>
+              <span>기획 착수부터 Google Play 프로덕션 출시까지</span>
+            </div>
+            <div>
+              <strong>12.9ms</strong>
+              <span>시설 50,600건 기준 지도 핀 API p95 (목표 300ms)</span>
+            </div>
+            <div>
+              <strong>1,360개</strong>
+              <span>테스트 케이스, 실제 PostGIS 통합 테스트 포함</span>
+            </div>
+            <div>
+              <strong>5종</strong>
+              <span>서울·인천·경기·전국 시설·고용 데이터 소스 통합</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mallo" class="section section-light" aria-labelledby="mallo-title">
         <div class="section-heading">
           <p class="eyebrow">Featured Project · Shipped</p>
           <h2 id="mallo-title">한국어 특화 음성 입력기 '말로(Mallo)', 기획부터 공개 베타 출시까지</h2>
@@ -394,6 +456,7 @@
           <div class="contact-actions">
             <a class="button button-primary" href="mailto:tyu1300@naver.com">tyu1300@naver.com</a>
             <a class="button button-secondary" href="#project">Project</a>
+            <a class="button button-secondary" href="https://play.google.com/store/apps/details?id=com.chanwoo.undongjari" target="_blank" rel="noopener">운동자리 (Google Play)</a>
             <a class="button button-secondary" href="https://www.project-mallo.com/" target="_blank" rel="noopener">Mallo</a>
           </div>
         </div>
