@@ -774,11 +774,13 @@ h1 {
   }
 }
 
-.mallo-hero {
+.mallo-hero,
+.featured-hero {
   margin-bottom: 0;
 }
 
-.mallo-actions {
+.mallo-actions,
+.featured-actions {
   margin-top: 24px;
 }
 
